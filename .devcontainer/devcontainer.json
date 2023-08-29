@@ -1,0 +1,26 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/php
+{
+    "dockerComposeFile": "./docker-compose.yaml",
+    "service": "csharp_devcontainer",
+    "workspaceFolder": "/Projects",
+    "customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-vscode.cpptools-extension-pack",
+				"ms-dotnettools.csharp",
+				"jmrog.vscode-nuget-package-manager",
+				"ms-vscode.cmake-tools",
+				"twxs.cmake"
+			],
+			"settings": {
+				"terminal.integrated.profiles.linux": {
+					"bash": {
+					  "path": "/bin/bash"
+					}
+				  },
+				  "terminal.integrated.defaultProfile.linux": "bash"
+			}
+		}
+	}
+  }

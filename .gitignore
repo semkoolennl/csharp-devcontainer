@@ -1,0 +1,6 @@
+# Ignore obj and bin directories for C# Projects
+**/obj/
+**/bin/
+
+Projects
+.devcontainer/.env

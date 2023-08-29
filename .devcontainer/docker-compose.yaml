@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  csharp_devcontainer:
+    container_name: csharp_devcontainer
+    build:
+      context: .
+      args:
+        USERNAME: "${USERNAME}"
+        USER_UID: "${USER_UID}"
+        USER_GID: "${USER_GID}"
+    volumes:
+      - ./../Projects:/Projects
